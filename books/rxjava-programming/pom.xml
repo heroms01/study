@@ -15,7 +15,7 @@
     <description>RxJava 프로그래밍 책 학습</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>12</java.version>
     </properties>
 
     <dependencies>

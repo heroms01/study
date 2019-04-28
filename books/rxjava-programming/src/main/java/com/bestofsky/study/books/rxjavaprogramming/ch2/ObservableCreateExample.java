@@ -9,7 +9,7 @@ public class ObservableCreateExample {
                 .subscribe(System.out::println);
     }
 
-    public void create() {
+    public void basic() {
         Observable<Integer> source = Observable.create(
                 (ObservableEmitter<Integer> emitter) -> {
                     emitter.onNext(100);
@@ -20,9 +20,32 @@ public class ObservableCreateExample {
         source.subscribe(System.out::println);
     }
 
+    public void notSubscribed() {
+        Observable<Integer> source = Observable.create(
+        (ObservableEmitter<Integer> emitter) -> {
+            emitter.onNext(100);
+            emitter.onNext(200);
+            emitter.onNext(300);
+            emitter.onComplete();
+        });
+    }
+
+    public void subscribeLambda() {
+        Observable<Integer> source = Observable.create(
+        (ObservableEmitter<Integer> emitter) -> {
+            emitter.onNext(100);
+            emitter.onNext(200);
+            emitter.onNext(300);
+            emitter.onComplete();
+        });
+        source.subscribe(data -> System.out.println("result: " + data));
+    }
+
     public static void main(String[] args) {
         ObservableCreateExample observableCreateExample = new ObservableCreateExample();
         observableCreateExample.emit();
-        observableCreateExample.create();
+        observableCreateExample.basic();
+        observableCreateExample.notSubscribed();
+        observableCreateExample.subscribeLambda();
     }
 }
