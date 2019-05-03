@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import reactor.core.publisher.Flux;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
 @Controller
 @RequestMapping("view")
 public class HelloController {
@@ -30,7 +33,17 @@ public class HelloController {
     @GetMapping("hello3")
     public String hello3(Model model) {
         Flux<User> users = userService.getUsers();
+
+        Flux<User> u1 = users.map(u -> {
+            u.setName("aaa");
+            return u;
+        });
+
+        Flux<User> u2 = users.flatMap(u -> Flux.just(u));
+
+
         model.addAttribute("users", users);
+        model.addAttribute("usersUpper", u1);
 
         return "view/hello3";
     }

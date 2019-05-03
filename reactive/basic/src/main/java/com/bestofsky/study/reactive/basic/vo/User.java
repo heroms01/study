@@ -1,9 +1,13 @@
 package com.bestofsky.study.reactive.basic.vo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
-    private String id;
+    private Integer id;
     private String name;
 }
