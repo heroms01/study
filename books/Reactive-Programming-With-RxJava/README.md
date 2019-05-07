@@ -25,6 +25,7 @@ RxJava를 활용한 리액티브 프로그래밍
   * 구독 및 동시성 원리를 이해하는 순간 비로소 RxJava를 고통없이 효과적으로 사용할 준비가 된것이다
  
 # 3장 연산자와 변환
+ * 연산자란 업스트림의 Observable<T>를 취해 다운스트림으로 Observable<R>을 내보내는 함수이다
  ## 핵심 연산자: 매핑과 필터링
  ## 여러개의 Observable
  ## 고수준 연산자: collect(), reduce(), scan(), distinct(), groupBy()
