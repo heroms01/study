@@ -1,0 +1,7 @@
+server:
+  port: 8100
+
+logging.level:
+  org.springframework:
+    security: debug
+    boot: debug
