@@ -1,9 +1,5 @@
 .idea
 target
-<<<<<<< HEAD
 *.iml
 *.pyc
 *.class
-=======
-*.iml
->>>>>>> refs/heads/books/카이-호스트만의-코어-자바8
