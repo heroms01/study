@@ -62,6 +62,7 @@
             <!-- 프로파일에 따라 배포에 포함될 폴더 -->
             <resource>
                 <directory>src/main/resources/config/${deployTarget}</directory>
+                <targetPath>propertie</targetPath>
             </resource>
         </resources>
     </build>
