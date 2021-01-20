@@ -1,16 +1,13 @@
-package com.bestofsky.study.reactive.basic;
+package com.bestofsky.study.reactive.basic.step1;
 
-import com.bestofsky.study.reactive.basic.service.UserService;
-import com.bestofsky.study.reactive.basic.vo.User;
+import com.bestofsky.study.reactive.basic.step1.service.UserService;
+import com.bestofsky.study.reactive.basic.step1.vo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import reactor.core.publisher.Flux;
-
-import java.util.HashMap;
-import java.util.LinkedHashMap;
 
 @Controller
 @RequestMapping("view")

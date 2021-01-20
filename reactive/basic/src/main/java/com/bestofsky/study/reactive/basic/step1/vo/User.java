@@ -1,4 +1,4 @@
-package com.bestofsky.study.reactive.basic.vo;
+package com.bestofsky.study.reactive.basic.step1.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

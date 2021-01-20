@@ -1,13 +1,13 @@
-package com.bestofsky.study.reactive.basic;
+package com.bestofsky.study.reactive.basic.step2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BasicApplication {
+public class Step2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(BasicApplication.class, args);
+        SpringApplication.run(Step2Application.class, args);
     }
 
 }

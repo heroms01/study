@@ -1,4 +1,4 @@
-package com.bestofsky.study.reactive.basic;
+package com.bestofsky.study.reactive.basic.step1;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
