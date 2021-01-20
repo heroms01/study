@@ -1,0 +1,14 @@
+D:\source\private\study\dotnet\restful-api\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.deps.json
+D:\source\private\study\dotnet\restful-api\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.runtimeconfig.json
+D:\source\private\study\dotnet\restful-api\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.runtimeconfig.dev.json
+D:\source\private\study\dotnet\restful-api\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.dll
+D:\source\private\study\dotnet\restful-api\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.pdb
+D:\source\private\study\dotnet\restful-api\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csprojAssemblyReference.cache
+D:\source\private\study\dotnet\restful-api\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csproj.CoreCompileInputs.cache
+D:\source\private\study\dotnet\restful-api\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.RazorAssemblyInfo.cache
+D:\source\private\study\dotnet\restful-api\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.RazorAssemblyInfo.cs
+D:\source\private\study\dotnet\restful-api\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.AssemblyInfoInputs.cache
+D:\source\private\study\dotnet\restful-api\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.AssemblyInfo.cs
+D:\source\private\study\dotnet\restful-api\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.RazorTargetAssemblyInfo.cache
+D:\source\private\study\dotnet\restful-api\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.dll
+D:\source\private\study\dotnet\restful-api\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.pdb
