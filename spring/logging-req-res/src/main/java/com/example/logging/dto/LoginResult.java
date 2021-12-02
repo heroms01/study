@@ -1,13 +1,13 @@
 package com.example.logging.dto;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
-public class LoginForm {
-    String password;
+@Builder
+public class LoginResult {
     String userId;
+    String result;
 }
