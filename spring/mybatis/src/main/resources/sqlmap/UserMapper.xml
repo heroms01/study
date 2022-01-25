@@ -12,6 +12,18 @@
         WHERE userId = #{userId}
     </select>
 
+    <select id="selectUserByNameAndHobby" resultType="com.example.mybatis.User">
+        SELECT
+        userId,
+        userPw,
+        koreanName,
+        englishName,
+        hobby
+        FROM tb_user
+        WHERE koreanName = #{koreanName}
+        and hobby = #{hobby}
+    </select>
+
     <insert id="createUser" parameterType="com.example.mybatis.User">
         INSERT INTO tb_user (userId, userPw, koreanName, englishName, hobby)
         VALUES(#{userId, jdbcType=VARCHAR},
