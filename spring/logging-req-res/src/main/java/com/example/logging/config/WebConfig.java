@@ -1,9 +1,6 @@
 package com.example.logging.config;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
@@ -29,15 +26,15 @@ public class WebConfig implements WebMvcConfigurer {
 //        return new LoggableDispatcherServlet();
 //    }
 
-    final LogInterceptor logInterceptor;
-
-    public WebConfig(LogInterceptor logInterceptor) {
-        this.logInterceptor = logInterceptor;
-    }
-
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(logInterceptor)
-                .addPathPatterns("/**");
-    }
+//    final LogInterceptor logInterceptor;
+//
+//    public WebConfig(LogInterceptor logInterceptor) {
+//        this.logInterceptor = logInterceptor;
+//    }
+//
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(logInterceptor)
+//                .addPathPatterns("/**");
+//    }
 }

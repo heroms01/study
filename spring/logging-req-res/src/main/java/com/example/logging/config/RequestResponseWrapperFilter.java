@@ -4,7 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.ContentCachingRequestWrapper;
-import org.springframework.web.util.ContentCachingResponseWrapper;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -24,7 +23,8 @@ public class RequestResponseWrapperFilter extends OncePerRequestFilter {
         } else {
             filterChain.doFilter(
                     new ContentCachingRequestWrapper(request),
-                    new ContentCachingResponseWrapper(response)
+//                    new ContentCachingResponseWrapper(response)
+                    response  //AOP 사용시엔 ContentCachingResponseWrapper가 필요 없다.
             );
         }
     }
