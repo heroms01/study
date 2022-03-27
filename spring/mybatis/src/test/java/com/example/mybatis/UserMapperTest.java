@@ -1,5 +1,7 @@
 package com.example.mybatis;
 
+import com.example.mybatis.model.User;
+import com.example.mybatis.model.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,6 +1,7 @@
-package com.example.mybatis;
+package com.example.mybatis.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.mybatis.model.User;
+import com.example.mybatis.model.UserMapper;
 import org.springframework.stereotype.Service;
 
 @Service

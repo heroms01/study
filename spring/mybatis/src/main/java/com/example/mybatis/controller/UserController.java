@@ -1,6 +1,7 @@
-package com.example.mybatis;
+package com.example.mybatis.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.mybatis.model.User;
+import com.example.mybatis.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
