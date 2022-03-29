@@ -12,6 +12,20 @@
         WHERE userId = #{userId}
     </select>
 
+    <select id="selectUserArr" resultType="com.example.mybatis.model.User">
+        SELECT
+            userId,
+            userPw,
+            koreanName,
+            englishName,
+            hobby
+        FROM tb_user
+        WHERE userId IN
+        <foreach collection="userArray" item="user" open="(" close=")" separator=",">
+            #{user}
+        </foreach>
+    </select>
+
     <select id="selectUserByNameAndHobby" resultType="com.example.mybatis.model.User">
         SELECT
         userId,

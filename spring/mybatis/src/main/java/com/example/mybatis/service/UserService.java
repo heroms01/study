@@ -1,8 +1,11 @@
 package com.example.mybatis.service;
 
 import com.example.mybatis.model.User;
+import com.example.mybatis.model.UserArray;
 import com.example.mybatis.model.UserMapper;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UserService {
@@ -14,6 +17,15 @@ public class UserService {
 
     public User findUser(String userId) {
         return userMapper.selectUser(userId);
+    }
+
+    public List<User> findUsers() {
+        String[] userArray = {"1", "2"};
+        UserArray user = UserArray.builder()
+                .userArray(userArray)
+                .build();
+
+        return userMapper.selectUserArr(user);
     }
 
     public void createUser(User user) {

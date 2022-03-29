@@ -22,6 +22,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.util.ContentCachingRequestWrapper;
 import org.springframework.web.util.WebUtils;
 
+import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
@@ -33,19 +34,18 @@ public class AspectLog {
     @Autowired
     SqlSession sqlSession;
 
-    @Pointcut("execution(* com.example.mybatis.model..*.*(..))")
-    private void cut() {}
-
-    @Before("cut()")
+    @Before("execution(* com.example.mybatis.model..*.*(..))")
     public void before(JoinPoint joinPoint) throws Exception {
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
         Method method = methodSignature.getMethod();
         String packageName = joinPoint.getSignature().getDeclaringTypeName();
         String sqlId = packageName + "." + method.getName();
 
-        String sql = sqlSession.getConfiguration().getMappedStatement(sqlId).getBoundSql(null).getSql();
-
-        log.info("************** {}", sql);
+        for (Object param : joinPoint.getArgs()) {
+            String sql = sqlSession.getConfiguration().getMappedStatement(sqlId).getBoundSql(param).getSql();
+            log.info("************** {}", sql);
+        }
     }
+
 
 }
