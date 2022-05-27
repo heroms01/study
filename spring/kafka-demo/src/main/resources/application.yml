@@ -1,0 +1,6 @@
+kafka:
+  consumer:
+    bootstrap-servers: localhost:9092
+    group-id: group1
+  producer:
+    bootstrap-servers: localhost:9092
